@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Formularios Rockeatseat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="global">
+    <div id="corfundo"></div>
+  
+  <div id="alinnhar">
+   <div id="page">
+      <h1>AVALIE SUA MENTORIA</h1>
+      <p>Chegou a hora de avaliar o seu mentor.Bora lá?</p>
+      <figure>
+        <img src="./assets/imgcabecalho.svg" alt="imagem de estrelas para avaliação">
+      </figure>
+       <div id="cabecalhoformred">
+        <h3>INFORMACÕES PESSOAIS</h3>
+      </div>
+   </div>
+  </div>
+</header>
+<main>
+  <div id="pageform">
+  <div id="formulario">
+   <form>
+    <fieldset>
+    <div class="ajusteform">
+      <div class="ladoalado">
+      <div class="ajustenomeinput">
+        <label for="nome" class="nomes">Nome</label>
+        <input type="text" name="nome" id="nome" class="camponome" placeholder="digite seu primeiro nome" required>
+      </div>
+       <div class="ajustenomeinput">
+        <label for="sobrenome" class="nomes">Sobrenome</label>
+        <input type="text"  name="sobrenome" id="sobrenome" class="camponome" placeholder="digite seu sobrenome" required>
+      </div>
+      </div>
+    </div>
+       <div class="ajustenomeinput">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="digite um email valido" required>
+       </div>
+      </fieldset>
+      <fieldset>
+        <legend>Informacões do Mentor</legend>
+        <div id="selecao" class="ajustenomeinput">
+          <label for="mentor">Selecione quem foi seu mentor</label>
+          <select name="mentor" id="mentor">
+            <option value="chiqinha">chiquinha</option>
+            <option value="kiko">kiko</option>
+            <option value="chaves">chaves</option>
+            <option value="dona-florinda">dona-florinda</option>
+          </select>
+          <div id="sobrementor" class="ajustenomeinput">
+            <label for="areatexto" class="nomes">Feedback sobre o seu mentor</label>
+            <input type="text" name="areatexto" id="areatexto" placeholder="digite seu feedback" required>
+           </div>
+           <div id="campocheck" class="checkbox">
+              <div id="checktrabalhado"onclick="marcacheck()" ></div>
+             <input type="checkbox" name="check" id="check"  onfocus="foco()" onblur="fora()" required>
+            <label for="check" class="nomes" onclick="marcacheck()">Todas as minhas duvidas foram esclarecidas durante a mentoria</label>
+           </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>agendando proxima mentoria</legend>
+
+        <div class="ajusteform">
+          <div class="ladoalado">
+          <div class="ajustenomeinput" id="ultimobox1">
+            <label for="data" class="nomes">Data</label>
+            <input type="date" name="nome" id="date" class="camponome" placeholder="digite a dtata" required>
+          </div>
+           <div class="ajustenomeinput" id="ultimobox2">
+            <label for="das" class="nomes">Das</label>
+            <input type="time"  name="das" id="das" class="camponome" placeholder="hora de entrada" required>
+          </div>
+          <div class="ajustenomeinput" id="ultimobox">
+            <label for="ate" class="nomes">Ate</label>
+            <input type="time"  name="ate" id="ate" class="camponome" placeholder="hora de termino" required>
+          </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="btn">
+         <button>Salvar</button>
+      </div>
+        </div> 
+      </div>
+    </div>
+   </form>
+</main>
+<script src="./assets/check.js"></script>
+</body>
+</html>
